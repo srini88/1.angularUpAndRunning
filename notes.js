@@ -51,3 +51,6 @@ angular js is lot more than adding basic functionality of html -- so better to p
 The number one reason for using a CDN is to improve your user's experience in terms of speed, and as we know - speed matters!
 
 Ensuring a consistent experience for all your users is important.
+
+
+angular - model view whatever -- 
