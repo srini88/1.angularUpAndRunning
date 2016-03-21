@@ -18,6 +18,7 @@ $http({
 	url:'data.json'
 }).then(function successCB(response){
 	$scope.artists = response.data;
+	$scope.artistOrder = 'name';  // add in quotes 
 
 	$scope.status = response.status;
 	$scope.headers = response.headers;
