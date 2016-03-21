@@ -54,3 +54,13 @@ Ensuring a consistent experience for all your users is important.
 
 
 angular - model view whatever -- 
+
+
+Using Angular markup like {{hash}} in a src attribute doesn't work right: The browser will fetch from the URL with the literal text {{hash}} until Angular replaces the expression inside {{hash}}. The ngSrc directive solves this problem.
+
+The buggy way to write it:
+
+<img src="http://www.gravatar.com/avatar/{{hash}}" alt="Description"/>
+The correct way to write it:
+
+<img ng-src="http://www.gravatar.com/avatar/{{hash}}" alt="Description" />
