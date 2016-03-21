@@ -1,6 +1,9 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('MyController', function MyController($scope, $http){
+// protecting names from minification to avoid namespace collision
+// passing scope and http 
+// 3rd parameter is function
+myApp.controller('MyController', ['$scope', '$http', function ($scope, $http){
 
 
 //old way
@@ -30,7 +33,7 @@ $http({
 
 
 
-});
+}]);
 
 // data – {string|Object} – The response body transformed with the transform functions.
 // status – {number} – HTTP status code of the response.
