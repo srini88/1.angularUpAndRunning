@@ -9,15 +9,9 @@
 </head>
 <body>
 
-
-
 <div class="main"  ng-controller="MyController">
 
-{{artists[0]}}
 
-<ul>
-<li ng-repeat="boo in artists"> {{boo.name}} </li>
-</ul>
 
 
 	<ul class="artistlist">
@@ -38,7 +32,20 @@
 
 <p ng-controller="MyController">
 {{artists.name}}
+
+<!-- 
+	{{status}}    200
+	{{headers}}   // nothing printed in headers
+
+	{{config}}   // everything config
+	{{statusText}}   //OK
+200 {"method":"GET","transformRequest":[null],"transformResponse":[null],"url":"data.json","headers":{"Accept":"application/json, text/plain, */*"}} OK -->
+
+
+
 </p>
+
+
 
 </div>
 

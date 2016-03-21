@@ -64,3 +64,28 @@ The buggy way to write it:
 The correct way to write it:
 
 <img ng-src="http://www.gravatar.com/avatar/{{hash}}" alt="Description" />
+
+
+bringing data from file -- --- use http as a service - as a file 
+
+in traditional js - use xhr request to bring in data from json or xml -- also called ajax 
+
+in angular js --- use service -- care of common task 
+- http service -- communication between http server and application 
+
+
+The $http service is a core Angular service that facilitates communication with the remote HTTP servers via the browser's XMLHttpRequest object or via JSONP.
+
+
+The $http service is a function which takes a single argument — a configuration object — that is used to generate an HTTP request and returns a promise.
+
+$http({
+  method: 'GET',
+  url: '/someUrl'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
